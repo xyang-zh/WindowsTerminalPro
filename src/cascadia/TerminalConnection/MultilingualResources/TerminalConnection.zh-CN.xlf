@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="zh-CN" original="TERMINALCONNECTION/RESOURCES/EN-US/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="1.0.0.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="TERMINALCONNECTION/RESOURCES/EN-US/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="AzureCodeExpiry" translate="yes" xml:space="preserve">
+          <source>This code will expire in 15 minutes.</source>
+          <target state="new">This code will expire in 15 minutes.</target>
+        </trans-unit>
+        <trans-unit id="AzureEnterTenant" translate="yes" xml:space="preserve">
+          <source>Please enter the desired tenant number.</source>
+          <target state="new">Please enter the desired tenant number.</target>
+        </trans-unit>
+        <trans-unit id="AzureNewLogin" translate="yes" xml:space="preserve">
+          <source>Enter {0} to login with a new account</source>
+          <target state="new">Enter {0} to login with a new account</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">{0} will be replaced with the resource from AzureUserEntry_NewLogin; it is intended to be a single-character shorthand for "new account"</note>
+        </trans-unit>
+        <trans-unit id="AzureRemoveStored" translate="yes" xml:space="preserve">
+          <source>Enter {0} to remove the above saved connection settings.</source>
+          <target state="new">Enter {0} to remove the above saved connection settings.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">{0} will be replaced with the resource from AzureUserEntry_RemoveStored; it is intended to be a single-character shorthand for "remove stored"</note>
+        </trans-unit>
+        <trans-unit id="AzureInvalidAccessInput" translate="yes" xml:space="preserve">
+          <source>Please enter a valid number to access the stored connection settings, {0} to log in with a new account, or {1} to remove the saved connection settings.</source>
+          <target state="new">Please enter a valid number to access the stored connection settings, {0} to log in with a new account, or {1} to remove the saved connection settings.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">{0} will be replaced with the resource from AzureUserEntry_NewLogin, and {1} will be replaced with AzureUserEntry_RemoveStored. This is an error message, used after AzureNewLogin/AzureRemoveStored if the user enters an invalid value.</note>
+        </trans-unit>
+        <trans-unit id="AzureNonNumberError" translate="yes" xml:space="preserve">
+          <source>Please enter a number.</source>
+          <target state="new">Please enter a number.</target>
+        </trans-unit>
+        <trans-unit id="AzureNumOutOfBoundsError" translate="yes" xml:space="preserve">
+          <source>Number out of bounds. Please enter a valid number.</source>
+          <target state="new">Number out of bounds. Please enter a valid number.</target>
+        </trans-unit>
+        <trans-unit id="AzureNoTenants" translate="yes" xml:space="preserve">
+          <source>Could not find any tenants.</source>
+          <target state="new">Could not find any tenants.</target>
+        </trans-unit>
+        <trans-unit id="AzureNoCloudAccount" translate="yes" xml:space="preserve">
+          <source>You have not set up your cloud shell account yet. Please go to https://shell.azure.com to set it up.</source>
+          <target state="new">You have not set up your cloud shell account yet. Please go to https://shell.azure.com to set it up.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">{Locked="https://shell.azure.com"} This URL should not be localized. Everything else should.</note>
+        </trans-unit>
+        <trans-unit id="AzureStorePrompt" translate="yes" xml:space="preserve">
+          <source>Do you want to save these connection settings for future logins? [{0}/{1}]</source>
+          <target state="new">Do you want to save these connection settings for future logins? [{0}/{1}]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">{0} and {1} will be replaced with AzureUserEntry_Yes and AzureUserEntry_No. They are single-character shorthands for "yes" and "no" in this language.</note>
+        </trans-unit>
+        <trans-unit id="AzureInvalidStoreInput" translate="yes" xml:space="preserve">
+          <source>Please enter {0} or {1}</source>
+          <target state="new">Please enter {0} or {1}</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">{0} and {1} will be replaced with AzureUserEntry_Yes and AzureUserEntry_No. This resource will be used as an error response after AzureStorePrompt.</note>
+        </trans-unit>
+        <trans-unit id="AzureRequestingCloud" translate="yes" xml:space="preserve">
+          <source>Requesting a cloud shell instance...</source>
+          <target state="new">Requesting a cloud shell instance...</target>
+        </trans-unit>
+        <trans-unit id="AzureSuccess" translate="yes" xml:space="preserve">
+          <source>Succeeded.</source>
+          <target state="new">Succeeded.</target>
+        </trans-unit>
+        <trans-unit id="AzureRequestingTerminal" translate="yes" xml:space="preserve">
+          <source>Requesting a terminal (this might take a while)...</source>
+          <target state="new">Requesting a terminal (this might take a while)...</target>
+        </trans-unit>
+        <trans-unit id="AzureTokensStored" translate="yes" xml:space="preserve">
+          <source>Your connection settings have been saved for future logins.</source>
+          <target state="new">Your connection settings have been saved for future logins.</target>
+        </trans-unit>
+        <trans-unit id="AzureNoTokens" translate="yes" xml:space="preserve">
+          <source>No tokens to remove.</source>
+          <target state="new">No tokens to remove.</target>
+        </trans-unit>
+        <trans-unit id="AzureTokensRemoved" translate="yes" xml:space="preserve">
+          <source>Saved connection settings removed.</source>
+          <target state="new">Saved connection settings removed.</target>
+        </trans-unit>
+        <trans-unit id="AzureOldCredentialsFlushedMessage" translate="yes" xml:space="preserve">
+          <source>Authentication parameters changed. You'll need to log in again.</source>
+          <target state="new">Authentication parameters changed. You'll need to log in again.</target>
+        </trans-unit>
+        <trans-unit id="AzureUnknownTenantName" translate="yes" xml:space="preserve">
+          <source><it id="1" pos="open">&lt;unknown tenant name&gt;</it></source>
+          <target state="new"><it id="1" pos="open">&lt;unknown tenant name&gt;</it></target>
+        </trans-unit>
+        <trans-unit id="AzureIthTenant" translate="yes" xml:space="preserve">
+          <source>Tenant {0}: {1} ({2})</source>
+          <target state="new">Tenant {0}: {1} ({2})</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">{0} is the tenant's number, which the user will enter to connect to the tenant. {1} is the tenant's display name, which will be meaningful for the user. {2} is the tenant's internal ID number.</note>
+        </trans-unit>
+        <trans-unit id="AzureSuccessfullyAuthenticated" translate="yes" xml:space="preserve">
+          <source>Authenticated.</source>
+          <target state="new">Authenticated.</target>
+        </trans-unit>
+        <trans-unit id="AzureUserEntry_NewLogin" translate="yes" xml:space="preserve">
+          <source>n</source>
+          <target state="new">n</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">This is shorthand for "new login". The user must enter this character to activate the New Login feature (AzureInvalidAccessInput, AzureNewLogin)</note>
+        </trans-unit>
+        <trans-unit id="AzureUserEntry_RemoveStored" translate="yes" xml:space="preserve">
+          <source>r</source>
+          <target state="new">r</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">This is shorthand for "remove saved connections". The user must enter this character to activate the Remove Saved Logins feature (AzureRemoveStored, AzureInvalidAccessInput)</note>
+        </trans-unit>
+        <trans-unit id="AzureUserEntry_Yes" translate="yes" xml:space="preserve">
+          <source>y</source>
+          <target state="new">y</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">This is shorthand for "yes". The user must enter this character to CONFIRM a prompt.</note>
+        </trans-unit>
+        <trans-unit id="AzureUserEntry_No" translate="yes" xml:space="preserve">
+          <source>n</source>
+          <target state="new">n</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">This is shorthand for "no". The user must enter this character to DECLINE a prompt.</note>
+        </trans-unit>
+        <trans-unit id="ProcessExited" translate="yes" xml:space="preserve">
+          <source>[process exited with code {0}]</source>
+          <target state="new">[process exited with code {0}]</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">The first argument {0} is the error code of the process. When there is no error, the number ZERO will be displayed. </note>
+        </trans-unit>
+        <trans-unit id="CtrlDToClose" translate="yes" xml:space="preserve">
+          <source>You can now close this terminal with Ctrl+D, or press Enter to restart.</source>
+          <target state="new">You can now close this terminal with Ctrl+D, or press Enter to restart.</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">"Ctrl+D" and "Enter" represent keys the user will press (control+D and Enter).</note>
+        </trans-unit>
+        <trans-unit id="ProcessFailedToLaunch" translate="yes" xml:space="preserve">
+          <source>[error {0} when launching `{1}']</source>
+          <target state="new">[error {0} when launching `{1}']</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">The first argument {0} is the error code. The second argument {1} is the user-specified path to a program.
+      If this string is broken to multiple lines, it will not be displayed properly.</note>
+        </trans-unit>
+        <trans-unit id="BadPathText" translate="yes" xml:space="preserve">
+          <source>Could not access starting directory "{0}"</source>
+          <target state="new">Could not access starting directory "{0}"</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">The first argument {0} is a path to a directory on the filesystem, as provided by the user.</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,120 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
+import "IKeyBindings.idl";
+import "IControlAppearance.idl";
+
+namespace Microsoft.Terminal.Control
+{
+    enum ScrollbarState
+    {
+        Visible = 0,
+        Hidden,
+        Always
+    };
+
+    enum TextAntialiasingMode
+    {
+        Grayscale = 0,
+        Cleartype,
+        Aliased
+    };
+
+    enum SerialBoundRate
+    {
+        Spd100 = 0,
+        Spd300,
+        Spd600,
+        Spd1200,
+        Spd2400,
+        Spd4800,
+        Spd9600,
+        Spd14400,
+        Spd19200,
+        Spd38400,
+        Spd57600,
+        Spd115200,
+        Spd230400,
+        Spd380400,
+        Spd460800,
+        Spd921600,
+    };
+
+    enum SerialDataWidth
+    {
+        W5 = 0,
+        W6,
+        W7,
+        W8
+    };
+
+    enum SerialCheckBit
+    {
+        None = 0,
+        Odd,
+        Even,
+        Mark,
+        Space
+    };
+
+    enum SerialStopBit
+    {
+        S1 = 0,
+        S1_5,
+        S2,
+    };
+
+    enum SerialFlowControl
+    {
+        XONORXOFF = 0,
+        DTRORDSR,
+        RTSORCTS,        
+    };
+    // Class Description:
+    // TerminalSettings encapsulates all settings that control the
+    //      TermControl's behavior. In these settings there is both the entirety
+    //      of the Core ITerminalSettings interface, and any additional settings
+    //      for specifically the control.
+    interface IControlSettings requires Microsoft.Terminal.Core.ICoreSettings,
+                               Microsoft.Terminal.Control.IControlAppearance
+    {
+        String ProfileName;
+        String ProfileSource;
+
+        Boolean UseAcrylic { get; };
+        ScrollbarState ScrollState { get; };
+
+        Boolean UseAtlasEngine { get; };
+
+        String FontFace { get; };
+        Single FontSize { get; };
+        Windows.UI.Text.FontWeight FontWeight { get; };
+        String Padding { get; };
+        Windows.Foundation.Collections.IMap<String, UInt32> FontFeatures { get; };
+        Windows.Foundation.Collections.IMap<String, Single> FontAxes { get; };
+
+        Microsoft.Terminal.Control.IKeyBindings KeyBindings { get; };
+
+        Boolean CopyOnSelect { get; };
+        Boolean FocusFollowMouse { get; };
+
+        String Commandline { get; };
+        String StartingDirectory { get; };
+        String EnvironmentVariables { get; };
+
+        TextAntialiasingMode AntialiasingMode { get; };
+
+        // Experimental Settings
+        Boolean ForceFullRepaintRendering { get; };
+        Boolean SoftwareRendering { get; };
+        Boolean ShowMarks { get; };
+        Boolean UseBackgroundImageForWindow { get; };
+
+        // serial Settings
+        SerialBoundRate BoundRate { get; };
+        SerialDataWidth DataWidth { get; };
+        SerialCheckBit CheckBit { get; };
+        SerialStopBit StopBit { get; };
+        SerialFlowControl FlowControl { get; };
+    };
+}
