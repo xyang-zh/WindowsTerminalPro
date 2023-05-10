@@ -27,7 +27,8 @@ TerminalPro，微软WindowsTerminal升级版。
 
 # TerminalPro
 
-微软有个绝招：这个功能喜欢么？喜欢我就砍掉😀🎉🎉。terminal一发布就受到了很多欢迎，但美中不足，它不支持工业型连接，比如**串口**，官方给的理由是由于可信连接等因素，推荐用**SSH**。
+微软有个绝招：这个功能喜欢么？ 喜欢我就、我就、我就砍掉😀😀😀<br>
+terminal一发布就受到了很多欢迎，但美中不足，它不支持工业型连接，比如**串口**，官方给的理由是由于可信连接等因素，推荐用**SSH**。
 ![reason](./png/reason.png)
 
 但对嵌入式开发的人来说，串口重要性不言而喻；而对于想用Terminal当做调试工具的人员，又不得不换到其他工具，但其他工具却比不上terminal好用。所以，[TerminalPro](https://github.com/Window-YANG/WindowsTerminalPro)就是为了解决这最后一步
