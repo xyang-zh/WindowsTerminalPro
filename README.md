@@ -43,7 +43,6 @@ v1.0
 - 更多功能在cmd中探索 :)
 
 ## 安装步骤
-- PowerShell 7+
 - 先安装证书，后安装TerminalPro（msix包）
 - 新建串口终端，将终端commandline换成WindowsTerminalSerial.exe所在位置
 - 使用串口前打开串口功能开关
