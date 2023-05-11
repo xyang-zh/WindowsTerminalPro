@@ -48,5 +48,5 @@ v1.0
 - 使用串口前打开串口功能开关
 - 保存，打开串口终端使用即可
 
-## 下载安装
+## 64位包
 [WindowsTerminalPro](https://github.com/xyang-zh/WindowsTerminalPro/releases/tag/release)
