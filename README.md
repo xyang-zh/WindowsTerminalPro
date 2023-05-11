@@ -47,3 +47,6 @@ v1.0
 - 新建串口终端，将终端commandline换成WindowsTerminalSerial.exe所在位置
 - 使用串口前打开串口功能开关
 - 保存，打开串口终端使用即可
+
+## 下载安装
+[WindowsTerminalPro](https://github.com/xyang-zh/WindowsTerminalPro/releases/tag/release)
